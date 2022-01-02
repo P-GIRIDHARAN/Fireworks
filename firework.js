@@ -19,6 +19,7 @@ function Firework() {
       if (this.firework.vel.y >= 0) {
         this.exploded = true;
         this.explode();
+        fsound.play();
       }
     }
     for (var i = this.particles.length - 1; i >= 0; i--) {
