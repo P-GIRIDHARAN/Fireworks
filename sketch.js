@@ -1,6 +1,9 @@
 var fireworks = [];
 var gravity;
-
+var fsound;
+function preload() {
+  fsound = loadSound("Fireworksound.mp3");
+}
 function setup() {
   createCanvas(1600, 720);
   colorMode(HSB);
