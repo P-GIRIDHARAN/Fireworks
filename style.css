@@ -3,37 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.hny {
-  background-color: none;
-  color: azure;
-  border: none;
-  margin: 0%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -100px; /* margin is -0.5 * dimension */
-  margin-top: -25px;
-  font-family: arial rgb(255, 34, 34);
-  font-size: 50px;
-  background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: move 100s linear infinite;
-}
-@keyframes move {
-  to {
-    background-position: 4500vh;
-  }
-}
+
 canvas {
   display: block;
 }
