@@ -102,3 +102,4 @@ function FireworkM(X, Y) {
     }
   };
 }
+
