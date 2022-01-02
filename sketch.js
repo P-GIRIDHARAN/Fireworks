@@ -4,6 +4,7 @@ var fsound;
 function preload() {
   fsound = loadSound("Fireworksound.mp3");
 }
+
 function setup() {
   createCanvas(1600, 720);
   colorMode(HSB);
@@ -26,5 +27,7 @@ function draw() {
       fireworks.splice(i, 1);
     }
   }
-  console.log(fireworks.length);
+}
+function mouseClicked() {
+  fireworks.push(new FireworkM());
 }
