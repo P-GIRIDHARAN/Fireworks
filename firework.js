@@ -50,7 +50,7 @@ function Firework() {
     }
   };
 }
-function FireworkM(X) {
+function FireworkM(X, Y) {
   this.hu = random(255);
   this.fireworkm = new ParticleM(mouseX, height, this.hu, true);
   this.exploded = false;
@@ -68,7 +68,7 @@ function FireworkM(X) {
       this.fireworkm.applyForce(gravity);
       this.fireworkm.update();
 
-      if (this.fireworkm.pos.y <= mouseY) {
+      if (this.fireworkm.pos.y <= Y) {
         this.exploded = true;
         this.explode();
         fsound.play();
