@@ -27,7 +27,7 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: move 4s linear infinite;
+  animation: move 50s linear infinite;
 }
 @keyframes move {
   to {
