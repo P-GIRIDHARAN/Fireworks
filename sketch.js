@@ -8,7 +8,16 @@ function preload() {
 
 function setup() {
   pixelDensity(1);
-  createCanvas(1600, 720);
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    // true for mobile device
+    createCanvas(480, 800);
+  } else {
+    createCanvas(1600, 720);
+  }
   colorMode(HSB);
   gravity = createVector(0, 0.2);
   stroke(255);
