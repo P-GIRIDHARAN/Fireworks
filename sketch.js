@@ -7,6 +7,7 @@ function preload() {
 }
 
 function setup() {
+  pixelDensity(1);
   createCanvas(1600, 720);
   colorMode(HSB);
   gravity = createVector(0, 0.2);
